@@ -46,5 +46,20 @@ print(manchete[15:-100])
 print(manchete[::-1])
 print(manchete[::4])
 
+#as Strings são imutáveis, não posso pegar um parte da string e substituí-la por outro usando um sinal de igualdade
+
+#uma funcionalidade muito boa seria o split, se você não passar nada como argumento ele vai separar as palavras por espaço,
+#mas você pode passar caracteres específicos como argumento que essa função vai utilizá-los como referência para separar
+#as Strings
+
+print(manchete.split()[1])
+
+manchete_list = manchete.split()
+
+#posso manipular essa novo variável de n formas, e agora, cada palavra será como se fosse um caracter de uma string
+print(manchete_list)
+print(manchete_list[-1])
+print(manchete_list[-1]=="consistência")
+
 
 
